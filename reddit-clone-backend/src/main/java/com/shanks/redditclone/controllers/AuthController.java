@@ -1,5 +1,7 @@
 package com.shanks.redditclone.controllers;
 
+import com.shanks.redditclone.dto.AuthenticationResponse;
+import com.shanks.redditclone.dto.LoginRequest;
 import com.shanks.redditclone.dto.RegisterRequest;
 import com.shanks.redditclone.services.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,5 +26,10 @@ public class AuthController {
     public ResponseEntity<String> verifyAccount(@PathVariable String token){
         authService.verifyAaccount(token);
         return new ResponseEntity<>("Account Activated Successfuly", HttpStatus.OK);
+    }
+
+    @PostMapping("/login")
+    public AuthenticationResponse login(@RequestBody LoginRequest loginRequest){
+        return authService.login(loginRequest);
     }
 }

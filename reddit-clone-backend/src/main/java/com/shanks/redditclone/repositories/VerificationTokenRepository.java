@@ -1,6 +1,6 @@
-package com.programming.techie.springredditclone.repository;
+package com.shanks.redditclone.repositories;
 
-import com.programming.techie.springredditclone.model.VerificationToken;
+import com.shanks.redditclone.models.VerificationToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

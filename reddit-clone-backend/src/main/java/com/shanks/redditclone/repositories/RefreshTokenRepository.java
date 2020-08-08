@@ -1,6 +1,6 @@
-package com.programming.techie.springredditclone.repository;
+package com.shanks.redditclone.repositories;
 
-import com.programming.techie.springredditclone.model.RefreshToken;
+import com.shanks.redditclone.models.RefreshToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
